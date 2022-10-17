@@ -48,17 +48,17 @@ const Footer = () => {
     <FOOTER>
       <LeftText>
         © 2021 Built and Design by{" "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
+        <a href="https://www.youtube.com/">
           @CodeBucks
         </a>
       </LeftText>
       <RightText>
         Reach out to me via 😉
-        <a href="https://twitter.com/code_bucks">
+        <a href="https://twitter.com/">
           <img src={Twitter} alt="Twitter" />
         </a>
         &nbsp;
-        <a href="https://www.instagram.com/code.bucks/">
+        <a href="https://www.instagram.com/">
           <img src={Instagram} alt="Instagram" />
         </a>
         &nbsp;
