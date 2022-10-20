@@ -1,9 +1,6 @@
 import SvgIcon from "../../assets/arrow-up.svg";
 
 import styled from "styled-components";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Up = styled.div`
   box-sizing: border-box;

@@ -1,7 +1,7 @@
 // This is Header component /Navigation Component
 import { gsap ,Power3} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import logo from "../../assets/logo.svg";
 
@@ -53,6 +53,7 @@ const Nav = styled.nav`
       width: 100%;
       background: var(--purple);
     }
+  }
 `;
 
 const Button = styled.button`
@@ -71,45 +72,9 @@ const Button = styled.button`
   }
 `;
 
-const HamburgerBtn = styled.button`
-  
-display: none;
-@media only Screen and (max-width: 48em) {
-  display: inline-block;
-}
-position: relative;
-background-color: transparent;
-width: 2rem;
-height: 2px;
-margin-top: 0rem;
-transition: all 0.3s;
-cursor: pointer;
-&::before,
-&::after {
-  content: "";
-  background-color: var(--white);
-  width: 2rem;
-  height: 2px;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-&::before {
-  top: -0.5rem;
-  transform: rotate(0);
-}
-&::after {
-  top: 0.5rem;
-  transform: rotate(0);
-}
 
-`;
 
 const Header = () => {
-  const [click,setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 

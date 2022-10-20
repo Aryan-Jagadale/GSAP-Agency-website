@@ -9,7 +9,7 @@ import Cone from "../../assets/3dtriangle.png";
 import Capsule from "../../assets/3dcapsule.png";
 
 import TextBlock from "../../components/TextBlock";
-import SvgBlock from "../../components/SvgBlock";
+//import SvgBlock from "../../components/SvgBlock";
 
 const ServiceSection = styled.section`
   width: 100vw;
@@ -129,7 +129,7 @@ const Services = () => {
   useEffect(() => {
     const element = ref.current;
     const line = document.getElementById("line");
-    const triangle = document.getElementById("triangle");
+    //const triangle = document.getElementById("triangle");
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -263,7 +263,7 @@ const Services = () => {
           <OBJ>
             <img src={Tube} alt="Tube Object" width="400" height="400" />
           </OBJ>
-          <SvgBlock svg="Design.svg" />
+          {/*<SvgBlock svg="Design.svg" />*/}
         </Content>
 
         <Content ref={addToRefs}>
@@ -280,7 +280,7 @@ const Services = () => {
           <OBJ>
             <img src={Cone} alt="Tube Object" width="400" height="400" />
           </OBJ>
-          <SvgBlock svg="Develope.svg" />
+          {/*<SvgBlock svg="Develope.svg" />*/}
         </Content>
 
         <Content ref={addToRefs}>
@@ -298,7 +298,7 @@ const Services = () => {
           <OBJ>
             <img src={Capsule} alt="Tube Object" width="400" height="350" />
           </OBJ>
-          <SvgBlock svg="Support.svg" />
+          {/*<SvgBlock svg="Support.svg" />*/}
         </Content>
       </ServiceSection>
     </>
